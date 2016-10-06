@@ -4,11 +4,42 @@
     <title>Few</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <div class="container branding">
+    		<%= image_tag("logo.png", class: "img-responsive col-md-offset-1 col-md-10 col-xs-12 heroimg") %>
+    </div>
+
+    <div class="container" id="about">
+    	<!-- was wir wollen -->
+    </div>
+
+     <div class="container" id="blog">
+    	<!-- was gerade los ist -->
+    </div>
+
+     <div class="container" id="bus">
+    	<!-- frühstücksbus -->
+    </div>
+
+     <div class="container" id="stimmen">
+    	<!-- stimmen -->
+    </div>
+
+    <div class="container" id="contact">
+    	<!-- kontakt -->
+    </div>
+
+    <div class="container" id="partner">
+    	<!-- partner -->
+    </div>
     <%= yield %>
   </body>
 </html>
