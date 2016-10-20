@@ -34,29 +34,31 @@
     </div>
 
     <div class="container" id="contact">
-    	<h1>Contact Us</h1>
+    	<h1>Kontakt</h1>
 
       <%= flash[:notice] %>
 
       <%= form_tag("/static_pages/mail_sent") do %>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="form-group">
-            <%= label_tag :name, "Name" %>
-            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Ihr Name" %>
-          </div>      
-          <div class="form-group">
-            <%= label_tag :email, "Email Adresse" %>
-            <%= text_field_tag :email, nil, class: "form-control", placeholder: "Ihre E-Mail" %>
+      <div id="few_contactform">
+        <div class="row">
+          <div class="col-md-4 few_contactform">
+            <div class="form-group">
+              <%= label_tag :name, "Name" %>
+              <%= text_field_tag :name, nil, class: "form-control", placeholder: "Ihr Name" %>
+            </div>      
+            <div class="form-group">
+              <%= label_tag :email, "Email Adresse" %>
+              <%= text_field_tag :email, nil, class: "form-control", placeholder: "Ihre E-Mail" %>
+            </div>
+            <div class="form-group">
+              <%= label_tag :message, "Nachricht" %>
+              <%= text_area_tag :message, nil, class: "form-control", placeholder: "Ihre Nachricht" %>
+            </div>      
           </div>
-          <div class="form-group">
-            <%= label_tag :message, "Nachricht" %>
-            <%= text_area_tag :message, nil, class: "form-control", placeholder: "Ihre Nachricht" %>
-          </div>      
         </div>
+        <%= submit_tag "Send" %>   
+        <% end %>
       </div>
-      <%= submit_tag "Send" %>   
-      <% end %>
     </div>
 
     <div class="container" id="partner">
