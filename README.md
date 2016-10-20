@@ -21,4 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+*  BRANCH:  You can do this with a single command in terminal: git checkout -b branchname. 
+*  switch back over to the master branch (using git checkout master), and make the fixes there to be pushed live. 
+* You can find out which branch you are on at any time using the git branch command
