@@ -19,3 +19,92 @@ h2,
 h3 {
   font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
 }
+
+
+/* 
+ * Navigation Bar
+ */
+
+
+.main-menu ul {
+  padding-left: 0;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 0px 3px 0px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  text-align:center;
+}
+
+nav li{
+  text-transform: uppercase;
+}
+
+.main-menu li {
+  display:inline-block; 
+}
+
+.main-menu > ul > li > a {
+  position:relative;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.25em;
+  color: #000000;
+  height:50px;
+  line-height:50px;
+  padding-left:15px;
+  padding-right:15px;
+  display:block;
+  float:left;
+}
+
+.main-menu > ul > li > a:hover{
+  color: #333;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-menu {
+  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-size:1.35em;
+  color: #000;
+  text-transform: uppercase;
+  }
+  #menu-main.js {
+    display: none;
+  }
+
+  .main-menu > ul > li > a {
+    font-size: 1.1em;
+    height: 40px;
+  }
+
+  ul {
+    width:100%;
+    list-style:none;
+  }
+  li {
+    width:100%;
+    border-right:none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  .main-menu > ul > li:after {
+    content:"/";
+    font:normal 24px/24px Helvetica, Arial;
+    display:block;
+    float:left;
+    width:6px;
+    margin-top:14px;
+    color: #333;
+  }
+
+  .main-menu > ul > li:last-child:after {
+      display:none;
+    }
+}
