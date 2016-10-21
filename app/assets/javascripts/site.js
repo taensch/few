@@ -1,3 +1,3 @@
- // $("few_contactform").submit(function(){
- //        $(this).hide();
- //    })
+ $("few_contactform").submit(function(){
+        $(this).hide();
+    })
