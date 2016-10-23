@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function(){
+    $(".sticker").sticky({ topSpacing: 0, center:true});
+});
