@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -17,53 +17,11 @@
     		<%= image_tag("logo.png", class: "img-responsive col-md-offset-1 col-md-10 col-xs-12 heroimg") %>
     </div>
 
-    <div class="container" id="about">
-    	<!-- was wir wollen -->
-    </div>
-
-     <div class="container" id="blog">
-    	<!-- was gerade los ist -->
-    </div>
-
-     <div class="container" id="bus">
-    	<!-- frühstücksbus -->
-    </div>
-
-     <div class="container" id="stimmen">
-    	<!-- stimmen -->
-    </div>
-
-    <div class="container" id="contact">
-    	<h1>Kontakt</h1>
-
-      <%= flash[:notice] %>
-
-      <%= form_tag("/static_pages/mail_sent") do %>
-      <div id="few_contactform">
-        <div class="row">
-          <div class="col-md-4 few_contactform">
-            <div class="form-group">
-              <%= label_tag :name, "Name" %>
-              <%= text_field_tag :name, nil, class: "form-control", placeholder: "Ihr Name" %>
-            </div>      
-            <div class="form-group">
-              <%= label_tag :email, "Email Adresse" %>
-              <%= text_field_tag :email, nil, class: "form-control", placeholder: "Ihre E-Mail" %>
-            </div>
-            <div class="form-group">
-              <%= label_tag :message, "Nachricht" %>
-              <%= text_area_tag :message, nil, class: "form-control", placeholder: "Ihre Nachricht" %>
-            </div>      
-          </div>
-        </div>
-        <%= submit_tag "Send" %>   
-        <% end %>
-      </div>
-    </div>
-
-    <div class="container" id="partner">
-    	<!-- partner -->
-    </div>
     <%= yield %>
+
+    <div class="container" id="footer">
+      <p><%= link_to "Impressum", static_pages_impressum_path %></p>
+    </div>
+    
   </body>
 </html>

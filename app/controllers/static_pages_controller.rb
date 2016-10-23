@@ -7,6 +7,9 @@ def mail_sent
   @email = params[:email]
   @message = params[:message]
   UserMailer.contact_form(@email, @name, @message).deliver_now
+ flash[:notice] = "Ihre Nachricht wurde versendet!"
+  redirect_to :back
+
 end
 
 end

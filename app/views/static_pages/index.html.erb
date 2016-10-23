@@ -1,2 +1,50 @@
-<!-- <h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p> -->
+   <div class="container" id="about">
+        <h1>Was wir wollen</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <!-- was wir wollen -->
+    </div>
+
+     <div class="container" id="blog">
+    	<h1>Was gerade los ist</h1><!-- was gerade los ist -->
+     </div>
+
+     <div class="container" id="bus">
+    	<h1>Frühstücksbus</h1><!-- frühstücksbus -->
+     </div>
+
+     <div class="container" id="stimmen">
+    	<!-- stimmen -->
+     </div>
+
+    <div class="container" id="contact">
+    	<div id="few_contactform">
+	    	<h1>Kontakt</h1>
+	      <div><p><%= flash[:notice] %></p></div>
+	      	  <%= form_tag("/static_pages/mail_sent") do %>  
+	        <div class="row">
+	          <div class="col-md-8">
+	            <div class="form-group">
+	              <%= label_tag :name, "Name" %>
+	              <%= text_field_tag :name, nil, class: "form-control", placeholder: "Ihr Name", :required => true %>
+	            </div>      
+	            <div class="form-group">
+	              <%= label_tag :email, "Email Adresse" %>
+	              <%= text_field_tag :email, nil, class: "form-control", placeholder: "Ihre E-Mail", :required => true %>
+	            </div>
+	            <div class="form-group">
+	              <%= label_tag :message, "Nachricht" %>
+	              <%= text_area_tag :message, nil, class: "form-control", placeholder: "Ihre Nachricht", :required => true %>
+	            </div>      
+	          </div>
+	        </div>
+	        <%= submit_tag "Abschicken", class: "btn btn-default" %>   
+	        <% end %>
+      </div>
+    </div>
+
+    <div class="container" id="partner">
+    	<h1>Partner</h1>
+    	<!-- partner -->
+    </div>
+
