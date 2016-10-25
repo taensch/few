@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Frühlingserwachen</title>
+    <title>Few</title>
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-
+    
+    <!-- HERO IMAGE -->
     <div class="container branding">
-      <%= image_tag("logo.png", class: "img-responsive col-md-offset-1 col-md-10 col-xs-12 heroimg") %>
+        <%= image_tag("logo.png", class: "img-responsive col-md-offset-1 col-md-10 col-xs-12 heroimg") %>
     </div>
 
+    <!-- NAV BAR -->
     <div class="main-menu container">
-      <nav class="nwrapper main-menu" role="navigation">
+      <nav class="wrapper main-menu sticker" role="navigation">
         <ul class="menu" id="menu-main">
-          <li class="menu-item-1" id="nav-about" ><a href="#about">Was wir wollen</a></li>
-          <li class="menu-item-2" id="nav-blog"><a href="#blog">Was gerade los ist</a></li>
-          <li class="menu-item-3" id="nav-bus"><a href="#bus">Frühstücksbus</a></li>
-          <li class="menu-item-4" id="nav-stimmen"><a href="#stimmen">Stimmen</a></li>
-          <li class="menu-item-5" id="nav-contact"><a href="#contact">Kontakt</a></li>
-          <li class="menu-item-6" id="nav-partner"><a href="#partner">Partner</a></li>
+          <li class="menu-item-1" id="nav-about" ><%= link_to "Was wir wollen", static_pages_index_path(anchor: "about")%></li>
+          <li class="menu-item-2" id="nav-blog"><%= link_to "Was gerade los ist", static_pages_index_path(anchor: "blog")%></li>
+          <li class="menu-item-3" id="nav-bus"><%= link_to "Frühstücksbus", static_pages_index_path(anchor: "bus")%></li>
+          <li class="menu-item-4" id="nav-stimmen"><%= link_to "Stimmen", static_pages_index_path(anchor: "stimmen")%></li>
+          <li class="menu-item-5" id="nav-contact"><%= link_to "Kontakt", static_pages_index_path(anchor: "contact")%></li>
+          <li class="menu-item-6" id="nav-partner"><%= link_to "Partner", static_pages_index_path(anchor: "partner")%></li>
         </ul>
         <script type="text/javascript">
           $("#menu-main").addClass("js").before('<div id="mobile-menu">&#9776; Menü</div>');
@@ -40,32 +40,29 @@
             }
           });
         </script>
+        
+        <!-- SMOOTH SCROLLING -->
+<!--         <script type="text/javascript">
+          var $root = $('html, body');
+$('a').click(function() {
+    var href = $.attr(this, 'href');
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+    return false;
+});
+        </script> -->
+    
       </nav>
     </div>
 
-    <div class="container" id="about">
-    	<!-- was wir wollen -->
-    </div>
-
-    <div class="container" id="blog">
-    	<!-- was gerade los ist -->
-    </div>
-
-     <div class="container" id="bus">
-    	<!-- frühstücksbus -->
-    </div>
-
-     <div class="container" id="stimmen">
-    	<!-- stimmen -->
-    </div>
-
-    <div class="container" id="contact">
-    	<!-- kontakt -->
-    </div>
-
-    <div class="container" id="partner">
-    	<!-- partner -->
-    </div>
+    <!-- CONTENT -->
     <%= yield %>
+
+<!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+ -->    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   </body>
 </html>

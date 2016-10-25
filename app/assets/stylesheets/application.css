@@ -14,17 +14,38 @@
  *= require_self
  */
 
+/* START FONT STYLING*/
+
 h1,
 h2,
 h3 {
-  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
 }
 
+p {
+  font-family: Frankin Gothic Book,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+}
 
-/* 
- * Navigation Bar
- */
+/* END FONT STYLING*/
 
+/*START POSITIONING STYLING*/
+.container{
+  width: 80%; 
+}
+
+.container2{
+  width: 88%; 
+  margin: 0 auto; 
+}
+
+/*END POSITIONING STYLING*/
+
+
+
+/*START NAV BAR*/
+.sticker{
+  background-color: #FFF;
+}
 
 .main-menu ul {
   padding-left: 0;
@@ -109,3 +130,5 @@ nav li{
       display:none;
     }
 }
+
+/*END NAV BAR*/
