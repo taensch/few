@@ -1,14 +1,24 @@
+<script src="app/assets/javascripts/jquery.stellar.min.js"></script>
+<script type="text/javascript">$.stellar();</script>
+
    <div class="container" id="about">
-    <div class="container2">
-        <h1>Was wir wollen</h1>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    </div>
+     <div class="container2">
+        <br> <!-- ggf rausnehmen -->
+          <h1>Was wir wollen</h1>  <br> <!-- ggf rausnehmen -->
+            <div class="row featurette">
+                 <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p></div>
+                 <div class="col-md-6"><%= image_tag("baum.jpg", class:"featurette-image img-responsive center-block") %></div>
+         </div>
+         <br><br>
+      </div>
     </div>
 
 
-     <div class="container" id="blog" data-stellar-background-ratio="1.8">
+     <div class="container" id="blog" data-stellar-background-ratio="0.5">
         <div class="container2">
+             <br><!-- ggf rausnehmen -->
     	<h1>Was gerade los ist</h1>
+                <br> <!-- ggf rausnehmen -->
                 <div class="row">
                   <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
@@ -41,60 +51,126 @@
                     </div>
                   </div>
                 </div>
+                <br><br> <!-- ggf rausnehmen -->
         </div>
      </div>
 
      <div class="container" id="bus">
         <div class="container2">
+        <br> <!-- ggf rausnehmen -->
     	<h1>Frühstücksbus</h1><!-- frühstücksbus -->
+             <br> <!-- ggf rausnehmen -->
+             <div class="row featurette">
+             <div class="col-md-6"><%= image_tag("bus.jpg", class:"featurette-image img-responsive center-block") %></div>
+             <div class="col-md-6"> <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.</p></div>
+             </div>
+             <br><br>
         </div>
      </div>
 
      <div class="container" id="stimmen">
         <div class="container2">
-        <!-- stimmen -->
-        </div>
-     </div>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <%= image_tag("backgroundV2.png", class:"img-responsive stimmen-img") %>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 id="quotes"><q><i>Unsere Gemeinschaft entsteht jeden Tag neu. Egal ob in Sportvereinen, den Narrenzünften, dem Seehasenfest, in den Gemeinden, bei sozialen Projekten, auf der Arbeit oder in der Nachbarschaft. Gemeinschaft kann nur vor Ort und aus Vielfalt entstehen.</i></q></h1>
+                
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <%= image_tag("backgroundV2.png", class:"img-responsive stimmen-img") %>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1 id="quotes"><q><i>Unsere Gemeinschaft entsteht jeden Tag neu. Egal ob in Sportvereinen, den Narrenzünften, dem Seehasenfest, in den Gemeinden, bei sozialen Projekten, auf der Arbeit oder in der Nachbarschaft. Gemeinschaft kann nur vor Ort und aus Vielfalt entstehen.</i></q></h1>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <%= image_tag("backgroundV2.png", class:"img-responsive stimmen-img") %>
+              <div class="container">
+                <div class="carousel-caption">
+                 <h1 id="quotes"><q><i>Unsere Gemeinschaft entsteht jeden Tag neu. Egal ob in Sportvereinen, den Narrenzünften, dem Seehasenfest, in den Gemeinden, bei sozialen Projekten, auf der Arbeit oder in der Nachbarschaft. Gemeinschaft kann nur vor Ort und aus Vielfalt entstehen.</i></q></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!--  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a> -->
+          <!-- <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> -->
+            <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+            <!-- <span class="sr-only">Next</span>
+          </a> -->
+        </div><!-- /carousel -->
+    </div>
+    </div>
 
     <div class="container" id="contact">
         <div class="container2">
     	<div id="few_contactform">
-	    	<h1>Kontakt</h1>
-	      <div><p><%= flash[:notice] %></p></div>
-	      	  <%= form_tag("/static_pages/mail_sent") do %>  
-	        <div class="row">
+                 <br>
+	    <h1>Kontakt</h1>
+                 <br> <!-- ggf rausnehmen -->
+	    <div><p><b><%= flash[:notice] %></b></p></div>
+	    <%= form_tag("/static_pages/mail_sent") do %>  
+	    <div class="row">
 	          <div class="col-md-8">
 	            <div class="form-group">
 	              <%= label_tag :name, "Name" %>
 	              <%= text_field_tag :name, nil, class: "form-control", placeholder: "Ihr Name", :required => true %>
 	            </div>      
 	            <div class="form-group">
-	              <%= label_tag :email, "Email Adresse" %>
+	              <%= label_tag :email, "E-Mail Adresse" %>
 	              <%= text_field_tag :email, nil, class: "form-control", placeholder: "Ihre E-Mail", :required => true %>
 	            </div>
 	            <div class="form-group">
 	              <%= label_tag :message, "Nachricht" %>
 	              <%= text_area_tag :message, nil, class: "form-control", placeholder: "Ihre Nachricht", :required => true %>
-	            </div>      
+	            </div>    
+                            <%= submit_tag "Abschicken", class: "btn btn-default" %>   
+                            <% end %>  
 	          </div>
-	        </div>
-	        <%= submit_tag "Abschicken", class: "btn btn-default" %>   
-	        <% end %>
+                        <div class="col-md-4">
+                            <h3>Sprechen Sie uns an!</h3><br>
+                            <p id="contact_text">Haben Sie Fragen? Oder Lust mitzuwirken? Interessiert daran uns zu unterstützen? Dann schreiben Sie uns. Oder schauen Sie doch mal bei <a href="https://www.facebook.com/Fr%C3%BChlingserwachen-ZusammenLeben-1693781200867345/"><i class="fa fa-facebook"></i></a> vorbei!</p>
+                        </div>
+	   </div>    
       </div>
       </div>
     </div>
 
     <div class="container" id="partner">
         <div class="container2">
+             <br>
     	<h1>Partner</h1>
-    	<!-- partner -->
+             <br>
+             <div class="row">
+                 <div class="col-md-4"><%= image_tag("studentlounge.png", class:"img-responsive") %></div>
+                 <div class="col-md-4"><%= image_tag("studentlounge.png", class:"img-responsive") %></div>
+                 <div class="col-md-4"><%= image_tag("studentlounge.png", class:"img-responsive") %></div>
+             </div>
         </div>
     </div>
 
+
        <!-- FOOTER -->
     <div class="container" id="footer">
+        <hr class="featurette-divider">
         <div class="container2">
-            <p><%= link_to "Impressum", static_pages_impressum_path %></p>
+            <p id="impressum"><%= link_to "Impressum", static_pages_impressum_path %></p>
         </div>
     </div>
 
