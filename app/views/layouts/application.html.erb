@@ -19,18 +19,18 @@
     </div>
 
     <!-- NAV BAR -->
-    <div class="main-menu container">
-      <nav class="wrapper main-menu sticker" role="navigation">
+    <!-- <div class="main-menu container"> -->
+      <nav class="wrapper main-menu sticker" role="navigation" id="container-navbar">
         <ul class="menu" id="menu-main">
-          <li class="menu-item-1" id="nav-about" ><%= link_to "Was wir wollen", static_pages_index_path(anchor: "about")%></li>
-          <li class="menu-item-2" id="nav-blog"><%= link_to "Was gerade los ist", static_pages_index_path(anchor: "blog")%></li>
-          <li class="menu-item-3" id="nav-bus"><%= link_to "Frühstücksbus", static_pages_index_path(anchor: "bus")%></li>
-          <li class="menu-item-4" id="nav-stimmen"><%= link_to "Stimmen", static_pages_index_path(anchor: "stimmen")%></li>
-          <li class="menu-item-5" id="nav-contact"><%= link_to "Kontakt", static_pages_index_path(anchor: "contact")%></li>
-          <li class="menu-item-6" id="nav-partner"><%= link_to "Partner", static_pages_index_path(anchor: "partner")%></li>
+          <li class="menu-item-1 page-scroll" id="nav-about" ><%= link_to "Was wir wollen", static_pages_index_path(anchor: "about")%></li>
+          <li class="menu-item-2 page-scroll" id="nav-blog"><%= link_to "Was gerade los ist", static_pages_index_path(anchor: "blog")%></li>
+          <li class="menu-item-3 page-scroll" id="nav-bus"><%= link_to "Frühstücksbus", static_pages_index_path(anchor: "bus")%></li>
+          <li class="menu-item-4 page-scroll" id="nav-stimmen"><%= link_to "Stimmen", static_pages_index_path(anchor: "stimmen")%></li>
+          <li class="menu-item-5 page-scroll" id="nav-contact"><%= link_to "Kontakt", static_pages_index_path(anchor: "contact")%></li>
+          <li class="menu-item-6 page-scroll" id="nav-partner"><%= link_to "Partner", static_pages_index_path(anchor: "partner")%></li>
         </ul>
         <script type="text/javascript">
-          $("#menu-main").addClass("js").before('<div id="mobile-menu">&#9776; Menü</div>');
+          $("#menu-main").addClass("js").before('<div id="mobile-menu" class="sticker">&#9776; Menü</div>');
           $("#mobile-menu").click(function(){
             $("#menu-main").toggle();
           });
@@ -56,13 +56,13 @@ $('a').click(function() {
         </script> -->
     
       </nav>
-    </div>
+    <!-- </div> -->
 
     <!-- CONTENT -->
     <%= yield %>
 
 <!--     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
- -->    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  -->   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   </body>
 </html>
