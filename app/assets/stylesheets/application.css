@@ -30,12 +30,14 @@ p {
 
 /*START POSITIONING STYLING*/
 .container{
-	width: 80%; 
+  width: 80%; 
+  padding-top: 70px;
 }
 
 .container2{
-	width: 88%; 
-	margin: 0 auto; 
+/*  width: 88%;*/ 
+  margin: 0 auto; 
+  padding: 2%;
 }
 
 /*END POSITIONING STYLING*/
@@ -45,6 +47,10 @@ p {
 /*START NAV BAR*/
 .sticker{
   background-color: #FFF;
+}
+
+#container-navbar{
+  z-index: 99 !important;
 }
 
 .main-menu ul {
@@ -70,7 +76,7 @@ nav li{
   font-weight: bold;
   font-style: normal;
   font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
-  font-size: 1.35em;
+  font-size: 1.12em;
   color: #000000;
   height:50px;
   line-height:50px;
@@ -90,6 +96,9 @@ nav li{
   font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
   font-size:1.35em;
   color: #000;
+  margin-top: 15px;
+  width: 80%;
+  padding-bottom: 15px;
   text-transform: uppercase;
   }
   #menu-main.js {
@@ -97,7 +106,7 @@ nav li{
   }
 
   .main-menu > ul > li > a {
-    font-size: 1.1em;
+    font-size: 1.35em;
     height: 40px;
   }
 
@@ -114,6 +123,11 @@ nav li{
 @media screen and (min-width: 768px) {
   #mobile-menu {
     display: none;
+  }
+
+  #menu-main{
+  width: 80%;
+  margin: 0 auto;
   }
 
   .main-menu > ul > li:after {

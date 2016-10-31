@@ -17,4 +17,36 @@
 
 $(document).on('turbolinks:load', function(){
     $(".sticker").sticky({ topSpacing: 0, center:true});
+
+    /*var $root = $('html, body');
+    $('#menu-main a').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+        }, 500, function () {
+        window.location.hash = href;
+      });
+      return false;
+    });*/
+  //jQuery to collapse the navbar on scroll
+  $(window).scroll(function() {
+      if ($(".main-menu").offset().top > 50) {
+          $(".main-menu").addClass("top-nav-collapse");
+      } else {
+          $(".main-menu").removeClass("top-nav-collapse");
+      }
+  });
+
+  //jQuery for page scrolling feature - requires jQuery Easing plugin
+  $(function() {
+      $('.page-scroll a').bind('click', function(event) {
+          var $anchor = $(this);
+          var $id = $($anchor.attr('href').replace("/static_pages/index", ""));
+          $('html, body').stop().animate({
+              scrollTop: $($id).offset().top
+          }, 1500, 'easeInOutExpo');
+          event.preventDefault();
+          console.log("scrolling is working!")
+      });
+  });
 });
