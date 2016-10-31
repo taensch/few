@@ -84,6 +84,7 @@ nav li{
   padding-right:15px;
   display:block;
   float:left;
+  text-decoration: none;
 }
 
 .main-menu > ul > li > a:hover{
