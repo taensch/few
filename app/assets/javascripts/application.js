@@ -46,7 +46,6 @@ $(document).on('turbolinks:load', function(){
               scrollTop: $($id).offset().top
           }, 1500, 'easeInOutExpo');
           event.preventDefault();
-          console.log("scrolling is working!")
       });
   });
 });
