@@ -1,0 +1,188 @@
+/* #blog{
+  background-image: url(backgroundV2.png);
+  background-attachment: fixed;
+} */
+/* line 12, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+#blog-container {
+  background-image: url(backgroundV2.png);
+  background-attachment: fixed;
+}
+
+/* line 19, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+#contact_text {
+  font-size: 1.45em;
+}
+
+/* line 24, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+.stimmen-img {
+  width: 100%;
+}
+
+/* line 28, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  width: 100%;
+  max-height: 400px !important;
+}
+
+/* line 33, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+#quotes {
+  padding-bottom: 580px;
+  text-align: left;
+}
+
+/* START IMPRESSUM STYLING */
+/* line 40, C:/Sites/few/app/assets/stylesheets/static_pages.scss */
+#impressum {
+  font-size: 1.5em;
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* START FONT STYLING*/
+
+
+h1,
+h2,
+h3 {
+  font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+}
+
+p {
+  font-family: Frankin Gothic Book,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+}
+
+/* END FONT STYLING*/
+
+/*START POSITIONING STYLING*/
+.container{
+  width: 80%; 
+  padding-top: 70px;
+}
+
+.container2{
+/*  width: 88%;*/ 
+  margin: 0 auto; 
+  padding: 2%;
+}
+
+/*END POSITIONING STYLING*/
+
+
+
+/*START NAV BAR*/
+.sticker{
+  background-color: #FFF;
+}
+
+#container-navbar{
+  z-index: 99 !important;
+}
+
+.main-menu ul {
+  padding-left: 0;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px 0px 3px 0px;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  text-align:center;
+}
+
+nav li{
+  text-transform: uppercase;
+}
+
+.main-menu li {
+  display:inline-block; 
+}
+
+.main-menu > ul > li > a {
+  position:relative;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-size: 1.12em;
+  color: #000000;
+  height:50px;
+  line-height:50px;
+  padding-left:15px;
+  padding-right:15px;
+  display:block;
+  float:left;
+  text-decoration: none;
+}
+
+.main-menu > ul > li > a:hover{
+  color: #333;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-menu {
+  font-family: Franklin Gothic Demi,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  font-size:1.35em;
+  color: #000;
+  margin-top: 15px;
+  width: 80%;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  }
+  #menu-main.js {
+    display: none;
+  }
+
+  .main-menu > ul > li > a {
+    font-size: 1.35em;
+    height: 40px;
+  }
+
+  ul {
+    width:100%;
+    list-style:none;
+  }
+  li {
+    width:100%;
+    border-right:none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  #menu-main{
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  .main-menu > ul > li:after {
+    content:"/";
+    font:normal 24px/24px Helvetica, Arial;
+    display:block;
+    float:left;
+    width:6px;
+    margin-top:14px;
+    color: #333;
+  }
+
+  .main-menu > ul > li:last-child:after {
+      display:none;
+    }
+}
+
+/*END NAV BAR*/
